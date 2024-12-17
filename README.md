@@ -5,10 +5,9 @@ Use Case: you find a hash which looks like base64 but hashid identifies it as UN
 - AES: 
 Normal "base64 -d" results in unreadable content. the hash is salted via AES-128, AES-192 or AES-256. normally salted key is embeded in the hash, what this tool do is to check for any of these three salt method inside the hash and tries to find the key in every possible offset.
 
+![Screenshot From 2024-12-17 13-14-29](https://github.com/user-attachments/assets/19cea1ae-32fd-4b14-9dab-164011bbf647)
 
-<code>hashid '57iOQI4Vf9tHC2sA/mlPRQSOdFcys/tdkoxQtA+0L30xkxtZtqu+rrx7e26lihWb5sb4tuGZlGaMuGl61fPYwtQA3iKYRV+/CyAWX0yxkK8HAgwlRQEZ4Am9lQ=='
-Analyzing '57iOQI4Vf9tHC2sA/mlPRQSOdFcys/tdkoxQtA+0L30xkxtZtqu+rrx7e26lihWb5sb4tuGZlGaMuGl61fPYwtQA3iKYRV+/CyAWX0yxkK8HAgwlRQEZ4Am9lQ=='
-[+] Unknown hash</code>
+
 
 <code>python decode_base64_AES.py 
 Starting brute-force search for AES keys at all offsets...
