@@ -146,3 +146,7 @@ Offset: 11, Key Size: 32 bytes
 Decrypted Output: b'This is a test message'
 
 [+] Success with offset 11, key size 32 bytes.</code>
+
+- Installation:
+  required libraries:<br>
+  <code> pip install pycryptodome </code>
